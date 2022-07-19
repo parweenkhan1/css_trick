@@ -1,0 +1,8 @@
+::selection{
+    background-color: #fff;
+    color: aquamarine;
+}
+.select1::selection{
+    background-color: red;
+    color: yellow;
+}
