@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .main_div{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: blueviolet;
+                color: #fff;
+            }
+            .main_div *{
+                padding-top: 10px;
+            }
+            /* li:nth-child(2n){
+                color: aqua;
+            }
+            li:nth-child(2n+1){
+                color: blanchedalmond;
+            }
+            li:first-child{
+                color: purple;
+            }
+            li:last-child{
+                color: purple;
+            } */
+            li:nth-child(4){
+                color: orange;
+            }
+            li:not(:nth-child(4)){
+                color: aqua;
+            }
+            li:nth-child(3n){
+                color: palegreen;
+            }
+        </style>
+        <title>css math</title>
+    </head>
+    <body>
+        <div class="main_div">
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+                <li>five</li>
+                <li>six</li>
+                <li>seven</li>
+                <li>eight</li>
+                <li>nine</li>
+                <li>ten</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .main_div {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .center_div {
+            width: 400px;
+            height: 230px;
+            position: relative;
+            border-radius: 16px;
+            padding: 30px;
+            background: linear-gradient(to right top, #00DBDE, rgba(108, 44, 226, 0.836));
+            box-shadow: 0 0 20px #626567;
+        }
+
+        .center_div::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(48% 83%, 100% 0%, 91% 80%, 35% 35%, 0 47%);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-image: linear-gradient(to left, #8f7bee, #009fff, #00b8f8, #00c9d1, #3fd3a5);
+            border-radius: 16px;
+            opacity: .5;
+            z-index: 1;
+        }
+        /* .center_div::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(48% 83%, 100% 0%, 91% 80%, 35% 35%, 0 47%);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-image:url(star.jpg);
+            border-radius: 16px;
+            opacity: .3;
+            z-index: 1;
+        } */
+
+        .center_div .top_div {
+            /* position:absolute; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .center_div .top_div h2 {
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 2px;
+            z-index: 2;
+        }
+
+        .center_div .top_div h1 {
+            font-weight: 700;
+            font-size: 30px;
+            text-align: right;
+            z-index: 2;
+        }
+
+        .center_div .bottom_div {
+            position: absolute;
+            bottom: 20px;
+            z-index: 2;
+        }
+
+        .center_div .bottom_div h2 {
+            font-size: 15px;
+            font-weight: 300;
+            text-transform: capitalize;
+            color: #dfe6e9;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            z-index: 2;
+        }
+
+        .center_div .bottom_div h1 {
+            font-size: 30px;
+            font-weight: 300;
+            text-transform: capitalize;
+            color: #dfe6e9;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            z-index: 2;
+        }
+    </style>
+    <title>Credit card</title>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <div class="top_div">
+                <h2>credit</h2>
+                <h1>VISA</h1>
+            </div>
+            <div class="bottom_div">
+                <h2>parween khan</h2>
+                <h1>4321-9876-5012-9900</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

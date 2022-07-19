@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik Moonrocks', cursive;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #58D68D;
+            display: grid;
+            place-items: center;
+        }
+        .main_div{
+            width: 40vw;
+            height: 70vh;
+            border: 2px solid #F1C40F;
+            border-radius: 5px;
+            color: #F1C40F;
+            /* 1--------position: relative; */
+            /* 2-------- display: table; */
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; */
+
+            display: grid;
+            place-items: center;
+
+
+        }
+        .main_div h1{
+            /*------------- vertically-center ---------------------*/
+            /*1---- position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%); */
+
+            /*2----- display: table-cell;
+            vertical-align: middle;
+            text-align: center; */
+            color: #F1C40F;
+
+
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 ways to make the text in center in a div</title>
+</head>
+<body>
+    <div class="main_div">
+        <h1> Hello Parween Khan</h1>
+        <!-- <p>SUSCRIBE</p> -->
+    </div>
+</body>
+</html>

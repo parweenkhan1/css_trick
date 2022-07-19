@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Ibarra Real Nova', serif;
+        }
+
+        .main_div {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center_div {
+            width: calc(100vw - 40vw);
+            height: calc(100vh - 30vh);
+            /* border: 1px solid #000; */
+            position: relative;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+                rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+        .center_div h1 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            position: absolute;
+            padding: 10px 0 10px 10px;
+        }
+
+        .center_div .pie_div {
+            background: radial-gradient(circle 130px, transparent 100%, #fff 0),
+                conic-gradient(#A2BF39 0,
+                    #A2BF39 50%,
+                    #6A2E2E 0,
+                    #6A2E2E 80%,
+                    #CF7979 0,
+                    #CF7979 100%);
+            min-width: 300px;
+            min-height: 450px;
+        }
+
+        .center_div h3 {
+            position: absolute;
+            bottom: 0;
+            padding: 0 0 10px 10px;
+        }
+
+        .center_div p {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 1.1rem;
+            text-align: right;
+        }
+
+        .center_div span::after {
+            content: "";
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background: currentColor;
+            margin: 0 10px 0 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pie chart</title>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <h1>making pie chart using htm and css</h1>
+            <div class="pie_div"></div>
+            <h3>death rate in India in last seven days!</h3>
+            <p>maharastra(18,229)<span style="color:#A2BF39;"></span><br>
+                Kerala (15,118) <span style="color: #6A2E2E;"></span><br>
+                Delhi (4,435)<span style="color:#CF7979"></span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
