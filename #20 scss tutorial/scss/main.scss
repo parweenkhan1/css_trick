@@ -1,0 +1,62 @@
+//6 parcials
+@import"mixin";
+@import"var";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+// 2 variables
+// $bg-color:#FFC18E;
+
+// 3 nesting
+
+//4 mixing
+// @mixin flexprop {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+// }
+//5 parameter
+// @mixin fontprop($prop,$prop1) {
+//     color: $bg-color;
+//     font-size: 5rem + 5rem;
+//     letter-spacing: $prop;
+//     text-transform: $prop1;
+// }
+.main_css{
+    width: 100vw;
+    height: 100vh;
+    @include flexprop();
+    background-color: #513252;
+    h1{
+        @include fontprop(.5rem,uppercase);
+        &:hover{
+            color: #C8B6E2;
+        }
+    }
+    p{
+        @include fontprop(.3rem,lowercase);
+        &:hover{
+            color: #C8B6E2;
+        }
+    }
+
+}
+// 1 operator
+
+
+
+//3 nesting
+// h1{
+//     color: $bg-color;
+//     font-size: 5rem + 5rem;
+// }
+// p{
+//     color: $bg-color;
+//     font-size: 5rem + 5rem;
+// }

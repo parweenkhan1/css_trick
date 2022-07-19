@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main_css {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #513252;
+}
+.main_css h1 {
+  color: #FFC18E;
+  font-size: 10rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+.main_css h1:hover {
+  color: #C8B6E2;
+}
+.main_css p {
+  color: #FFC18E;
+  font-size: 10rem;
+  letter-spacing: 0.3rem;
+  text-transform: lowercase;
+}
+.main_css p:hover {
+  color: #C8B6E2;
+}/*# sourceMappingURL=main.css.map */

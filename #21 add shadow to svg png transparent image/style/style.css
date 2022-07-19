@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_div img {
+  width: 50vw;
+  height: auto;
+  filter: drop-shadow(10px 10px 10px grey);
+}
+.main_div img:hover {
+  filter: drop-shadow(10px 10px 10px yellow);
+}/*# sourceMappingURL=style.css.map */

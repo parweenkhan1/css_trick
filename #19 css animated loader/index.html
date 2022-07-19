@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *,*::after,*::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .main_div{
+            width: 100vw;
+            height: 100vh;
+            background-color:#377D71 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center_div{
+            width: 50vw;
+            height: calc(100vh - 50vh);
+            background-color: #FBA1A1;
+            display: grid;
+            place-items: center;
+        }
+        .loader{
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1.5rem solid #fff;
+            border-top:1.5rem solid #FAEA48;
+            animation: loader 2s linear infinite;
+        }
+        @keyframes loader{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css loader</title>
+</head>
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <div class="loader"></div>
+        </div>
+    </div>
+</body>
+</html>
